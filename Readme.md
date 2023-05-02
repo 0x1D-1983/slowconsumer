@@ -13,11 +13,11 @@ The IAsyncEnumerable that we materialize the stream into can buffer up to 16 mes
 
 ## Output
 
-This means in the first second we gonna process 16 events, that is 16 batches of 100 events. The LINQ style data shaping xalcuklates the sum of the numbers in the batches this way the first line contains the sum of the numbers 0..99 = 4950
+This means in the first second we gonna process 16 events, that is 16 batches of 100 messages. The LINQ style data shaping flow calculates the sum of the numbers in the batches this way the first line contains the sum of the numbers 0..99 = 4950
 
 Tip: The formula to calculate the Sum of the first N numbers is: N*(N+1)/2
 
-(4950, 00:00:01.0523240)
+`(4950, 00:00:01.0523240)
 (14950, 00:00:01.0631750)
 (24950, 00:00:01.0631940)
 (34950, 00:00:01.0632000)
@@ -48,4 +48,4 @@ Tip: The formula to calculate the Sum of the first N numbers is: N*(N+1)/2
 (284950, 00:00:02.0671030)
 (294950, 00:00:02.0671230)
 (304950, 00:00:02.0671460)
-(314950, 00:00:02.0671560)
+(314950, 00:00:02.0671560)`
